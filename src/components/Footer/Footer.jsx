@@ -2,20 +2,16 @@ import React from "react";
 import {
   MDBFooter,
   MDBContainer,
-  MDBIcon,
   MDBInput,
   MDBCol,
   MDBRow,
   MDBBtn
 } from "mdb-react-ui-kit";
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { ReactNavbar } from "overlay-navbar";
 import "../Footer/Footer.css";
 
-const Footer = () => {
+function Footer() {
   return (
-    <MDBFooter className="text-center" color="white" bgColor="dark">
+    <MDBFooter className="text-center footer" color="white" bgColor="dark">
       <MDBContainer className="p-4">
         <section className="">
           <MDBRow>

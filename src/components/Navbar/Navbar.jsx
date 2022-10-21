@@ -1,8 +1,8 @@
 import React from "react";
 import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
 import "./Nav.css";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import Home from "../Home";
+import { BrowserRouter as Router, Routes, Navigate, Route, Link } from "react-router-dom";
+import Home from "../Home/Home";
 import Contact from "../Contact";
 import Testimonials from "../Testimonials";
 import OurTeam from "../OurTeam";
@@ -80,6 +80,7 @@ function Navb() {
         <Route path="/search" element={<Search />} />
         <Route path="/sell-your-home" element={<SellHome />} />
         <Route path="/sign-in" element={<SignIn />} />
+        <Route path="" element={<Home />} />
       </Routes>
     </Router>
   );
